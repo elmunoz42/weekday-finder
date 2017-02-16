@@ -24,9 +24,10 @@
     $app->get("/", function() use ($app) {
         return $app['twig']->render('form.html.twig',array('result'=>array()));
     });
+    
     $app->post("/", function() use ($app) {
         $newDate = new Date();
-        $result = $newDate->DayFinder($_POST['userInput']);
+        $result = $newDate->DayFinder($_POST['day'], $_POST['month'], $_POST['year']);
         return $app['twig']->render('form.html.twig',array("result"=>$result));
 
     });

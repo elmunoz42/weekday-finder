@@ -1,9 +1,9 @@
 <?php
     class Date
     {
-        function DayFinder($userInput)
+        function DayFinder($day, $month, $year)
         {
-
+            return date("l", mktime(substr($year,-3,1), substr($year,-2,1), substr($year,-1), $month, $day, $year));
         }
 
 

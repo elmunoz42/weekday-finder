@@ -1,6 +1,6 @@
-# Scrabble Score Counter
+# Day from Date Finder
 
-#### _A webpage that returns the score for a Scrabble word, 16 February 2017_
+#### _A webpage that returns the day of the week from and date inputed, 16 February 2017_
 
 #### By _**Carlos Munoz Kampff & Matt Kelley**_
 
@@ -22,15 +22,9 @@ This webpage will allow two users to
 
 |Behavior|Input|Output|
 |--------|-----|------|
-| User inputs a one point letter and receives score | "A" | 1 |
-| User inputs a two point letter and receives score | "D" | 2 |
-| User inputs a three point letter and receives score | "B" | 3 |
-| User inputs a four point letter and receives score | "F" | 4 |
-| User inputs a five point letter and receives score | "K" | 5 |
-| User inputs a eight point letter and receives score | "J" | 8 |
-| User inputs a ten point letter and receives score | "Q" | 10 |
-| User inputs a word | "Apple" | 9 |
-| user enters any non-letter characters | "P.L" | "4" |
+| User enters a full date | 2/16/2017 | "Thursday" |
+| User enters anything other than a year in the year textbox | "potato" | "no, bad user" |
+
 
 
 
