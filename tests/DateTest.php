@@ -9,11 +9,9 @@
         {
 
             $test_date = new Date;
-            $first_input = "1";
-            $second_input = "1";
-            $third_input = "2000";
+            $first_input = "2000-01-01";
 
-            $result = $test_date->DayFinder($first_input, $second_input, $third_input);
+            $result = $test_date->DayFinder($first_input);
 
             $this->assertEquals("Saturday", $result);
         }
@@ -22,11 +20,9 @@
         {
 
             $test_date = new Date;
-            $first_input = "16";
-            $second_input = "2";
-            $third_input = "2017";
+            $first_input = "2017-02-16";
 
-            $result = $test_date->DayFinder($first_input, $second_input, $third_input);
+            $result = $test_date->DayFinder($first_input);
 
             $this->assertEquals("Thursday", $result);
         }

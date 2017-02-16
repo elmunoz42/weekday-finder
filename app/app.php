@@ -24,12 +24,11 @@
     $app->get("/", function() use ($app) {
         return $app['twig']->render('form.html.twig',array('result'=>array()));
     });
-    
+
     $app->post("/", function() use ($app) {
         $newDate = new Date();
-        $result = $newDate->DayFinder($_POST['day'], $_POST['month'], $_POST['year']);
+        $result = $newDate->DayFinder($_POST['userInput']);
         return $app['twig']->render('form.html.twig',array("result"=>$result));
-
     });
 
     $app->post("/delete", function() use ($app) {
